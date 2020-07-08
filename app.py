@@ -22,7 +22,7 @@ def predict():
     output = round(prediction[0][0],2)
     return render_template('index.html',prediction_text="The predicted distance is {}".format(output))
 if __name__=="__main__":
-    app.run()
+    app.run(host='0.0.0.0',port=8080)
 
 
 
